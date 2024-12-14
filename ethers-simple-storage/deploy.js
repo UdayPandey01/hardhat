@@ -33,6 +33,8 @@ async function main() {
   const transactionReceipt = await transactionResponse.wait(1)
   const updatedFavouriteNumber = await contract.retreive()
   console.log(`Updated favourite number: ${updatedFavouriteNumber}`)
+  
+} 
 
 main()
     .then(() => process.exit(0))
